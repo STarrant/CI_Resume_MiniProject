@@ -10,6 +10,10 @@
     background-color: #fff;
 }
 
+.bg-color-personal-info {
+    background-color: #dddddd
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -208,4 +212,50 @@ footer {
 
 #footer-details {
     padding: 20px;      /* Giving 20px all round padding to space the push footer elements off the top. */
+}
+
+/*--------------------------------------------Three Reasons*/
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+/*--------------------------------------------Personal Info*/
+
+.personal-info-item {       /*Each personal info item should take up a full row and push sublings down below.*/
+    margin-bottom: 20px;    /*Gives vertical space between items.*/
+    display: block;         /*Each item take a full row.*/
+    clear: both;            /*Stops other items appearing on either side of it in case using floats.*/
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;     /*Give a little space.*/
+    display: inline-block;   /*Allows two divs side by side.*/
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;                  /*Allows margins to be dealt with outside section.*/
+}
+
+.personal-info-item .key {
+    width: 30%;             /*Set key to 30% and value to 60%. Looks neat.*/
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;        /*So it hugs the top of the div as much as possible.*/
+}
+
+.personal-info-item .key p {
+    font-weight: 700;       /*Makes key texts appear bold.*/
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;             /*Set key to 30% and value to 60%. Looks neat.*/
 }
